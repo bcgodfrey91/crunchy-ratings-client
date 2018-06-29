@@ -27,6 +27,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <h1>Crunchy Ratings</h1>
         <ShowList
           shows={this.state.shows}
         />

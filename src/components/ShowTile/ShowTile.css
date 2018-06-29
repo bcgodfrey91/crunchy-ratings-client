@@ -1,14 +1,17 @@
 .show-tile {
-  border: 1px solid black;
+  background-color: #FFFFF9;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin: 0 2.5vw;
 }
 
-.show-tile-image {
-  width: 200px;
-  height: 300px;
-  margin: 0 5rem;
+.show-image {
+  min-width: 12.5rem;
+  min-height: 18.75rem;
+  max-width: 12.5rem;
+  max-height: 18.75rem;
+  margin: 0 2.5rem;
 }
 
 .show-tile-content {
@@ -16,6 +19,37 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  border: 1px solid magenta;
   width: 100%;
+  flex: 4;
+}
+
+.show-tile-content,
+.rating-container {
+  border-top: 1px solid #F27530;
+  border-bottom: 1px solid #F27530;
+}
+
+.show-description {
+  margin: 1rem;
+}
+
+.show-link {
+  margin: 1rem 0 ;
+  font-weight: 700;
+  color: #3680AD;
+}
+
+.show-link:hover {
+  color: #195579;
+}
+
+.rating-container {
+  flex: 1;
+  align-self: center;
+  height: 100%;
+  margin-right: 2.5rem;
+  min-height: 18.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

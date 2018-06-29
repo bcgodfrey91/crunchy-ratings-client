@@ -6,14 +6,15 @@ class ShowList extends Component {
     const renderShows = () => {
       return this.props.shows.map(show => {
         return (
-          <ShowTile
-            key={show.id}
-            title={show.title}
-            description={show.description}
-            rating={show.rating}
-            image={show.image}
-            href={show.url}
-          />
+          <div key={show._id}>
+            <ShowTile
+              title={show.title}
+              description={show.description}
+              rating={show.rating}
+              image={show.image}
+              href={show.url}
+            />
+          </div>
         );
       })
     }
