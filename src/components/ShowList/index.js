@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import ShowTile from '../ShowTile';
+import './ShowList.css';
 
 class ShowList extends Component {
   render() {
     const renderShows = () => {
       return this.props.shows.map(show => {
         return (
-          <div key={show._id}>
+          <div className="show-tile-container" key={show._id}>
             <ShowTile
               title={show.title}
               description={show.description}

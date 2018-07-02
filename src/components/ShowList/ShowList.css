@@ -1,0 +1,9 @@
+.show-list {
+  margin: 0 10vw;
+  background-color: #FFFFF9;
+}
+
+.show-tile-container:first-child .show-tile-content,
+.show-tile-container:first-child .rating-container {
+  border-top: none;
+}
