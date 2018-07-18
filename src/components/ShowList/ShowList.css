@@ -1,5 +1,9 @@
 .show-list {
   margin: 0 10vw;
+  background-color: #F0F0F0;
+}
+
+.even {
   background-color: #FFFFF9;
 }
 
