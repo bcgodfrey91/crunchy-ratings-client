@@ -6,12 +6,8 @@ class ShowList extends Component {
   render() {
     const renderShows = () => {
       return this.props.shows.map((show, index) => {
-        if (index % 2 === 0) {
-          show.trait = 'even';
-        }
-
         return (
-          <div className={`show-tile-container ${show.trait}`} key={show._id}>
+          <div className='show-tile-container' key={show._id}>
             <ShowTile
               title={show.title}
               description={show.description}

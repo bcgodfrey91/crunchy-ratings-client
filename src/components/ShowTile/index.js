@@ -1,9 +1,10 @@
 import React from 'react';
 import './ShowTile.css';
+import star from './star.svg';
 
-const ShowTile = ({ title, description, image, rating, href, trait }) => {
+const ShowTile = ({ title, description, image, rating, href }) => {
   return (
-    <div className={`show-tile ${trait}`}>
+    <div className='show-tile'>
       <div className="image-container">
         <img
           className="show-image"
@@ -11,23 +12,30 @@ const ShowTile = ({ title, description, image, rating, href, trait }) => {
           alt={`${title} Poster`}
         />
       </div>
-      <span className="show-tile-content">
-        <h1 className="show-title">{title}</h1>
-        <p className="show-description">{description}</p>
-      </span>
-      <div className="rating-container">
-        <div className="rating-border">
-          <h3 className="show-rating">{rating}</h3>
+      <div className="show-tile-content-container">
+        <div className="show-tile-content">
+          <h3 className="show-title">{title}</h3>
+          <p className="show-description">{description}</p>
         </div>
-          <a
-            className="show-link"
-            href={href}
-            target="_blank"
-          >
-          <button className="watch-button">
-            Watch
-          </button>
-        </a>
+        <div className="rating-container">
+          <div className="rating-border">
+            <img
+              className="star-icon"
+              src={star}
+              alt="Star Rating Icon"
+            />
+            <h3 className="show-rating">{rating}</h3>
+          </div>
+            <a
+              className="show-link"
+              href={href}
+              target="_blank"
+            >
+            <button className="watch-button">
+              Watch
+            </button>
+          </a>
+        </div>
       </div>
     </div>
   );
