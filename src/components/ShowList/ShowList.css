@@ -1,6 +1,14 @@
 .show-list {
   margin: 0 2.5vw;
   background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.show-tile-container {
+  width: 100%;
+  max-width: 60rem;
 }
 
 .show-tile-container:first-child .show-tile-content,

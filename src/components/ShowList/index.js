@@ -11,6 +11,7 @@ class ShowList extends Component {
             <ShowTile
               title={show.title}
               description={show.description}
+              ranking={index + 1}
               rating={show.rating}
               image={show.image}
               href={show.url}

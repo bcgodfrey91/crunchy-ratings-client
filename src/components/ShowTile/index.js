@@ -2,7 +2,7 @@ import React from 'react';
 import './ShowTile.css';
 import star from './star.svg';
 
-const ShowTile = ({ title, description, image, rating, href }) => {
+const ShowTile = ({ title, description, image, ranking, rating, href }) => {
   return (
     <div className='show-tile'>
       <div className="show-tile-content-container">
@@ -18,6 +18,7 @@ const ShowTile = ({ title, description, image, rating, href }) => {
             <p className="show-description">{description}</p>
           </div>
           <div className="rating-container">
+            <p className="show-rank">Rank: #{ranking}</p>
             <div className="rating-border">
               <img
                 className="star-icon"
