@@ -13,12 +13,12 @@
 
 @media screen and (min-width: 62.5rem) {
   .hero-tile {
-    height: 50vh;
+    height: 60vh;
   }
 }
 
 @media screen and (min-width: 70rem) {
   .hero-tile {
-    height: 90vh;
+    height: 80vh;
   }
 }
