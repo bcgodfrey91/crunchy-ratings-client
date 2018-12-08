@@ -15,19 +15,19 @@
 }
 
 .image-container {
-  display: flex;
   align-items: center;
+  display: flex;
   margin-left: 0.5rem;
 }
 
 .show-image {
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.2);
+  height: 100%;
   min-width: 4rem;
   min-height: 6rem;
   max-width: 4rem;
   max-height: 6rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.2);
-  height: 100%;
   width: 100%;
 }
 
@@ -59,17 +59,17 @@
 }
 
 .rating-container {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
   margin-right: 0.5rem;
 }
 
 .rating-border {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .star-icon {
@@ -87,20 +87,20 @@
 }
 
 .show-link {
+  display: inline-block;
   margin: 0;
   padding: 0;
-  display: inline-block;
 }
 
 .watch-button {
-  padding: 0.3rem 0.75rem;
+  background-color: #623CEA;
+  border-radius: 0.25rem;
   box-shadow: 0 0.05rem 0.15rem 0 rgba(0,0,0,.5);
+  color: #FFFFF9;
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.5;
-  border-radius: 0.25rem;
-  background-color: #623CEA;
-  color: #FFFFF9;
+  padding: 0.3rem 0.75rem;
 }
 
 .watch-button:hover {
@@ -122,10 +122,10 @@
   }
 
   .show-image {
-    min-width: 5rem;
-    min-height: 7.5rem;
-    max-width: 5rem;
     max-height: 7.5rem;
+    max-width: 5rem;
+    min-height: 7.5rem;
+    min-width: 5rem;
   }
 
   .show-tile-content {
@@ -134,29 +134,29 @@
 
   .show-description {
     display: block;
-    overflow: hidden;
-    position: relative;
     line-height: 1.2rem;
     max-height: 2.4rem;
-    text-align: justify;
+    overflow: hidden;
     padding-right: 1rem;
+    position: relative;
+    text-align: justify;
   }
 
   .show-description::before {
+    bottom: 0.05rem;
     content: '...';
     position: absolute;
     right: 0.25rem;
-    bottom: 0.05rem;
   }
 
   .show-description::after {
+    background: #FFFFF9;
     content: '';
+    height: 1rem;
+    margin-top: 0.2rem;
     position: absolute;
     right: 0;
     width: 1rem;
-    height: 1rem;
-    margin-top: 0.2rem;
-    background: #FFFFF9;
   }
 
   .watch-button {
@@ -172,10 +172,10 @@
 
 @media screen and (min-width: 48rem) {
   .show-image {
-    min-width: 6rem;
-    min-height: 9rem;
-    max-width: 6rem;
     max-height: 9rem;
+    max-width: 6rem;
+    min-height: 9rem;
+    min-width: 6rem;
   }
 
   .show-tile-content {
@@ -199,10 +199,10 @@
 
 @media screen and (min-width: 62.5rem) {
   .show-image {
-    min-width: 7rem;
-    min-height: 10.5rem;
-    max-width: 7rem;
     max-height: 10.5rem;
+    max-width: 7rem;
+    min-height: 10.5rem;
+    min-width: 7rem;
   }
 
   .show-tile-content {

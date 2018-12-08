@@ -1,14 +1,14 @@
 .show-list {
-  margin: 0 2.5vw;
+  align-items: center;
   background: transparent;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin: 0 2.5vw;
 }
 
 .show-tile-container {
-  width: 100%;
   max-width: 60rem;
+  width: 100%;
 }
 
 .show-tile-container:first-child .show-tile-content,
@@ -17,15 +17,15 @@
 }
 
 .load-more {
-  padding: 1rem 5rem;
-  box-shadow: 0 0.05rem 0.15rem 0 rgba(0,0,0,.5);
-  font-weight: 700;
-  font-size: 1.75rem;
-  line-height: 1.5;
-  border-radius: 0.25rem;
   background-color: #623CEA;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.05rem 0.15rem 0 rgba(0,0,0,.5);
   color: #FFFFF9;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.5;
   margin: 1rem 0 2rem;
+  padding: 1rem 5rem;
 }
 
 .load-more:hover {
