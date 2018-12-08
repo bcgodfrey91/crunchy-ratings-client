@@ -27,8 +27,9 @@
 .crunchy-path,
 .rank-path {
   fill: #623CEA;
+  opacity: 0.9;
   stroke: #FFFFF9;
-  stroke-width: 3;
+  stroke-width: 2;
   stroke-linecap: round;
   stroke-miterlimit: 10;
 }
