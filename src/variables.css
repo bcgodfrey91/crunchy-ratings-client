@@ -11,3 +11,13 @@ h2,
 p {
   margin: 1rem 0;
 }
+
+.show-title,
+.show-rank,
+.hero-tile {
+  font-family: 'Roboto', sans-serif;
+}
+.show-description,
+.show-rating {
+  font-family: 'Lato', sans-serif;
+}

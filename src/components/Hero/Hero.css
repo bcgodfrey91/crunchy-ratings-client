@@ -5,43 +5,84 @@
   background: linear-gradient(to left top, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   display: flex;
   flex-direction: column;
-  height: 30vh;
+  font-weight: 800;
+  height: 60vh;
   justify-content: center;
   margin: 0;
   width: 100vw;
 }
 
-.hero-title {
-  margin: 0;
+.hero-bottom-content {
+  display: flex;
+  flex-direction: row;
 }
 
-.crunchy-container,
-.rank-container {
-  margin: 2rem 0;
+.crunchy-container {
+  margin-left: -0.15rem;
 }
 
-.hero-text {
-  width: 100rem;
+.crunchy-container svg {
+  max-width: 23.25rem;
+}
+
+.rank-container svg {
+  max-width: 13.3rem;
+}
+
+.logo-container svg {
+  max-width: 8.55rem;;
+}
+
+.logo-container {
+  align-items: center;
+  display: flex;
+  margin-left: 2rem;
+  max-height: 10.75rem;
 }
 
 .crunchy-path,
-.rank-path {
-  fill: #623CEA;
-  opacity: 0.9;
-  stroke: #FFFFF9;
+.rank-path,
+.logo-path {
+  stroke: #623CEA;
+  fill: #fffff9;
+  opacity: 0.95;
   stroke-width: 2;
   stroke-linecap: round;
   stroke-miterlimit: 10;
 }
 
+.logo-path {
+  stroke-width: 20;
+}
+
 @media screen and (min-width: 62.5rem) {
   .hero-tile {
-    height: 60vh;
+    height: 70vh;
+  }
+
+  .crunchy-container {
+    margin-bottom: 3rem;
+  }
+
+  .crunchy-container svg {
+    max-width: none;
+  }
+
+  .rank-container svg {
+    max-width: none;
+  }
+
+  .logo-container svg {
+    max-width: none;
   }
 }
 
 @media screen and (min-width: 70rem) {
   .hero-tile {
     height: 80vh;
+  }
+
+  .crunchy-container {
+    margin-bottom: 5rem;
   }
 }

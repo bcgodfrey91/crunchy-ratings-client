@@ -7,13 +7,14 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      isLoading: true,
       shows: [],
     };
   }
 
   componentDidMount() {
     this.fetchShows()
-    .then(res => this.setState({ shows: res }))
+    .then(res => this.setState({ shows: res, isLoading: false }))
     .catch(err => console.log(err));
   }
 
@@ -26,6 +27,18 @@ class App extends Component {
   };
 
   render() {
+    const { isLoading } = this.state;
+    if (isLoading) {
+      return (
+        <div className="App">
+          <Hero />
+          <div className="loader-container">
+            <div className="loader"></div>
+          </div>
+        </div>
+      )
+    }
+
     return (
       <div className="App">
         <Hero />
