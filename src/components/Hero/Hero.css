@@ -1,4 +1,8 @@
 .hero-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 30vh;
   width: 100vw;
   background: #FDC830;  /* fallback for old browsers */
@@ -9,6 +13,24 @@
 
 .hero-title {
   margin: 0;
+}
+
+.crunchy-container,
+.rank-container {
+  margin: 2rem 0;
+}
+
+.hero-text {
+  width: 100rem;
+}
+
+.crunchy-path,
+.rank-path {
+  fill: #623CEA;
+  stroke: #FFFFF9;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
 }
 
 @media screen and (min-width: 62.5rem) {
