@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Hero from '../Hero';
 import ShowList from '../ShowList';
+import { apiEndpoint } from '../../env.json';
 import './App.css';
 
 class App extends Component {
@@ -19,7 +20,7 @@ class App extends Component {
   }
 
   fetchShows = async () => {
-    const response = await fetch('/shows');
+    const response = await fetch(apiEndpoint);
     const body = await response.json();
     if (response.status !== 200) throw Error(body.message);
 
