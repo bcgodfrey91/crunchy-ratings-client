@@ -19,7 +19,7 @@ class App extends Component {
   }
 
   fetchShows = async () => {
-    const response = await fetch("https://crunchy-rank-api.herokuapp.com/shows");
+    const response = await fetch("https://cors-anywhere.herokuapp.com/https://crunchy-rank-api.herokuapp.com/shows");
     const body = await response.json();
     if (response.status !== 200) throw Error(body.message);
 
