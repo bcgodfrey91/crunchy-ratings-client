@@ -33,7 +33,7 @@ const ShowTile = ({ title, description, image, ranking, rating, href }) => {
               target="_blank"
             >
             <button className="watch-button">
-              Watch
+              <span>Watch</span>
             </button>
           </a>
         </div>
