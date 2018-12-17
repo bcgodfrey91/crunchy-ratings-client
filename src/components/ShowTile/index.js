@@ -14,11 +14,18 @@ const ShowTile = ({ title, description, image, ranking, rating, href }) => {
           />
         </div>
           <div className="show-tile-content">
-            <p className="show-title">{title}</p>
+            <p className="show-title"><span>{ranking}. </span>{title}</p>
+            <div className="mobile-rating-border">
+              <img
+                className="star-icon"
+                src={star}
+                alt="Star Rating Icon"
+              />
+              <p className="show-rating">{rating}</p>
+            </div>
             <p className="show-description">{description}</p>
           </div>
           <div className="rating-container">
-            <p className="show-rank">Rank: #{ranking}</p>
             <div className="rating-border">
               <img
                 className="star-icon"
